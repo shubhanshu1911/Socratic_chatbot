@@ -1,9 +1,6 @@
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
-from .db import get_db
-from .crud import get_student_by_name, create_conversation
-from .subject_classification import classify_subject
-from .question_generation import generate_question
+from db import get_db
 
 app = FastAPI()
 

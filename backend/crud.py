@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from .models import Student, Conversation
+from models import Student, Conversation
 
 def get_student_by_name(db: Session, name: str):
     return db.query(Student).filter(Student.name == name).first()
